@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dodo Nyoka - Home</title>
+		<link rel="stylesheet" href="assets/css/style.css" />
+
+		<!-- LottieFiles for Preloader Animation -->
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	</head>
+	<body>
+		<!-- Preloader -->
+		<div id="preloader-overlay">
+			<lottie-player
+				src="https://assets9.lottiefiles.com/private_files/lf30_dgjK16.json"
+				background="transparent"
+				speed="1"
+				style="width: 300px; height: 300px"
+				loop
+				autoplay
+			>
+			</lottie-player>
+		</div>
+
+		<!-- Navbar -->
+		<div id="navbar-container"></div>
+
+		<!-- Hero Section -->
+		<section class="hero-section">
+			<div class="hero-overlay"></div>
+			<div class="hero-content">
+				<h1>Welcome to Dodo Nyoka's World</h1>
+				<p>Country music straight from the heart</p>
+			</div>
+		</section>
+
+		<section class="carousel-wrapper">
+			<div class="carousel-container" id="carousel">
+				<!-- Images will be auto inserted by JS -->
+			</div>
+			<div class="carousel-controls">
+				<button id="prev-btn">&#10094;</button>
+				<button id="next-btn">&#10095;</button>
+			</div>
+		</section>
+
+		<div id="footer-container"></div>
+
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>

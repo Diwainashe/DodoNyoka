@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact - Dodo Nyoka</title>
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Preloader -->
+		<div id="preloader-overlay">
+			<lottie-player
+				src="https://assets9.lottiefiles.com/private_files/lf30_dgjK16.json"
+				background="transparent"
+				speed="1"
+				style="width: 300px; height: 300px"
+				loop
+				autoplay
+			>
+			</lottie-player>
+		</div>
+
+		<!-- Navbar -->
+		<div id="navbar-container"></div>
+
+		<!-- Hero Section -->
+		<section
+			class="hero-section"
+			style="
+				background: linear-gradient(135deg, #e0eafc, #cfdef3),
+					url('assets/images/20250429_194411.jpg') center/cover no-repeat;
+			"
+		>
+			<div class="hero-overlay"></div>
+			<div class="hero-content">
+				<h1>Contact</h1>
+				<p>We'd love to hear from you!</p>
+			</div>
+		</section>
+
+		<!-- Contact Form -->
+		<section
+			class="content-section"
+			style="background: #f8f9fa; padding: 4rem 2rem"
+		>
+			<form class="contact-form">
+				<input
+					type="text"
+					placeholder="Your Name"
+					required
+					style="padding: 0.8rem; border: 1px solid #ccc; border-radius: 5px"
+				/>
+				<input
+					type="email"
+					placeholder="Your Email"
+					required
+					style="padding: 0.8rem; border: 1px solid #ccc; border-radius: 5px"
+				/>
+				<textarea
+					placeholder="Your Message"
+					required
+					style="
+						padding: 0.8rem;
+						border: 1px solid #ccc;
+						border-radius: 5px;
+						resize: vertical;
+					"
+				></textarea>
+				<button
+					type="submit"
+					style="
+						background-color: #aa7f5b;
+						color: white;
+						border: none;
+						padding: 0.8rem;
+						font-weight: bold;
+						border-radius: 5px;
+						cursor: pointer;
+					"
+				>
+					Send Message
+				</button>
+			</form>
+		</section>
+
+		<div id="footer-container"></div>
+
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>
