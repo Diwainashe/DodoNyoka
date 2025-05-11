@@ -59,6 +59,33 @@ Promise.all([
 	});
 });
 
+// Load Hero Partial & configure per-page image/text
+document.addEventListener("DOMContentLoaded", () => {
+	const heroContainer = document.getElementById("hero-container");
+	if (!heroContainer) return;
+
+	fetch("partials/hero.html")
+		.then((res) => res.text())
+		.then((html) => {
+			heroContainer.innerHTML = html;
+			const section = heroContainer.querySelector(".hero-section");
+			const titleEl = heroContainer.querySelector("#hero-title");
+			const subEl = heroContainer.querySelector("#hero-subtitle");
+
+			// pull in your data- attributes
+			const img = heroContainer.dataset.image;
+			const title = heroContainer.dataset.title;
+			const sub = heroContainer.dataset.subtitle;
+
+			// set the background-image, title & subtitle
+			section.style.background = `
+        url('assets/images/${img}') center/cover no-repeat
+      `;
+			titleEl.textContent = title;
+			subEl.textContent = sub;
+		});
+});
+
 // Carousel Auto-Slide
 if (document.getElementById("carousel")) {
 	const carouselContainer = document.getElementById("carousel");
