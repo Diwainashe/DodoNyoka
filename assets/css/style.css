@@ -139,40 +139,28 @@ body, html {
 
 /* Hero Section */
 .hero-section {
-    position: relative;
-    height: 100vh;
-    background: url('../images/hero.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-
 .hero-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(245, 233, 226, 0.4);
-    backdrop-filter: blur(4px);
+  position: absolute;
+  inset: 0;
+  background: rgba(245,233,226,0.4);
+  backdrop-filter: blur(1px);
 }
-
 .hero-content {
-    position: relative;
-    z-index: 2;
-    color: #333;
-    padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  padding: 0 2rem;
 }
+.hero-content h1 { font-size: 3rem; margin-bottom:1rem; }
+.hero-content p  { font-size: 1.2rem; }
 
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-}
 
 /* Carousel Section */
 .carousel-container {
