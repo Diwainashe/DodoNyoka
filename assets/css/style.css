@@ -315,6 +315,11 @@ body, html {
         width: 70%;
     }
 
+    .hero-section {
+        background-size: cover !important;
+        background-position: center center !important;
+  }
+
     .hero-content h1 {
         font-size: 2.5rem;
     }
