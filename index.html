@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Dodo Nyoka - Home</title>
+		<title>Dodo - Home</title>
 		<link rel="stylesheet" href="assets/css/style.css" />
 
 		<!-- LottieFiles for Preloader Animation -->
@@ -26,23 +26,22 @@
 		<!-- Navbar -->
 		<div id="navbar-container"></div>
 
-		<!-- Hero Placeholder (in your page, e.g. index.html) -->
-		<div
-			id="hero-container"
-			data-image="8.jpg"
-			data-title="Welcome to Dodo Nyoka's World"
-			data-subtitle="Country music straight from the heart"
-		></div>
-
-		<section class="carousel-wrapper">
-			<div class="carousel-container" id="carousel">
-				<!-- Images will be auto inserted by JS -->
-			</div>
-			<div class="carousel-controls">
-				<button id="prev-btn">&#10094;</button>
-				<button id="next-btn">&#10095;</button>
-			</div>
-		</section>
+		<div class="interactive-split-container">
+			<div
+				class="split left"
+				style="
+					background-image: url('assets/images/24.jpg');
+					background-position: right center;
+				"
+				aria-label="Dodo Nyoka Image 1"
+			></div>
+			<div
+				class="split right"
+				style="background-image: url('assets/images/42.jpg')"
+				aria-label="Dodo Nyoka Image 2"
+			></div>
+			<div class="hero-center-text">dodo</div>
+		</div>
 
 		<div id="footer-container"></div>
 
