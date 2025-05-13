@@ -70,19 +70,20 @@ document.addEventListener("DOMContentLoaded", () => {
 			heroContainer.innerHTML = html;
 			const section = heroContainer.querySelector(".hero-section");
 			const titleEl = heroContainer.querySelector("#hero-title");
-			const subEl = heroContainer.querySelector("#hero-subtitle");
 
 			// pull in your data- attributes
 			const img = heroContainer.dataset.image;
 			const title = heroContainer.dataset.title;
-			const sub = heroContainer.dataset.subtitle;
+			const position = heroContainer.dataset.position || "center center";
+			const scale = heroContainer.dataset.scale || "cover";
 
-			// set the background-image, title & subtitle
-			section.style.background = `
-        url('assets/images/${img}') center/cover no-repeat
-      `;
+			// set background step-by-step
+			section.style.backgroundImage = `url('assets/images/${img}')`;
+			section.style.backgroundPosition = position;
+			section.style.backgroundRepeat = "no-repeat";
+			section.style.backgroundSize = scale;
+
 			titleEl.textContent = title;
-			subEl.textContent = sub;
 		});
 });
 
